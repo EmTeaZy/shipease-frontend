@@ -1,6 +1,7 @@
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
 import Person4OutlinedIcon from '@mui/icons-material/Person4Outlined';
+import { ListItemIcon } from '@mui/material';
 const NavigationItems = [
   {
     name: 'Dashboard',
@@ -15,6 +16,11 @@ const NavigationItems = [
   {
     name: 'Vehicles Garage',
     link: '/vehiclesGarage',
+    icon: <Person4OutlinedIcon style={{ color: '#565656' }} />,
+  },
+  {
+    name: 'Products',
+    link: '/products',
     icon: <Person4OutlinedIcon style={{ color: '#565656' }} />,
   },
 ];

@@ -24,6 +24,7 @@ import VehiclesGarage from './tenant/pages/vehiclesGarage/vehiclesGarage';
 import CreateDriver from './tenant/pages/createDriver/createDriver';
 import CreateVehicle from './tenant/pages/createVehicle/createVehicle';
 import UseAdminAuth from './admin/auth/adminAuth';
+import products from './tenant/pages/products/products'
 
 const App = () => {
   const { loading } = UseAdminAuth();
@@ -57,6 +58,10 @@ const App = () => {
                         />
                         <Route path="addDriver" element={<CreateDriver />} />
                         <Route path="addVehicle" element={<CreateVehicle />} />
+                        <Route
+                          path="products"
+                          element={<products />}
+                        />
                       </Route>
                       <Route path="*" element={<ErrorPage />}></Route>
                     </Routes>
