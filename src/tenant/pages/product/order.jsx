@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import Item from './item';
+import React from "react";
 
-const Order = () => {
-  const [order, setOrder] = useState([]);
+const Order = ({ product }) => {
+  if (!product) {
+    return null;
+  }
 
-  const addToOrder = (product) => {
-    setOrder([...order, product]);
-  };
+  const { image, name, description } = product;
 
   return (
     <div className="order">
-      <h2>Order</h2>
-      {order.map((product, index) => (
-        <div key={index} className="order-item">
-          <Item product={product} />
+      <div className="order-content">
+        <img src={image} alt={name} className="order-image" />
+        <div className="order-info">
+          <h3 className="order-name">{name}</h3>
+          <p className="order-description">{description}</p>
         </div>
-      ))}
+      </div>
     </div>
   );
 };
