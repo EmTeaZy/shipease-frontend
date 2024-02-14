@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from "react";
+import Products from "./products";
+import Order from "./order";
 
-const Item = ({ product, addToOrder }) => {
-  const { name, image, description, price } = product;
+const Apppage = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleAddToCart = (product) => {
+    setSelectedProduct(product);
+  };
 
   return (
-    <div className="product">
-      <img src={image} alt={name} />
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <p>${price}</p>
-      <button onClick={() => addToOrder(product)}>Add to Order</button>
+    <div className="app">
+      <div className="side-panel">
+        <Order product={selectedProduct} />
+      </div>
+      <div className="main-panel">
+        <Products onAddToCart={handleAddToCart} />
+      </div>
     </div>
   );
 };
 
-export default Item;
+export default Apppage;
