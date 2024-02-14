@@ -1,25 +1,32 @@
-import React from 'react';
-import Order from './order';
-import item from './item';
+import React from "react";
+import theme from "../../../theme";
+import { Grid, Box } from '@mui/material';
 
-const products = [
-  // Add product objects here
-];
+const Product = ({ product, onAddToCart }) => {
+  const { id, name, image, price, description } = product;
 
-const App = () => {
   return (
-    <div className="App">
-      <h1>Products</h1>
-      <div className="products-container">
-        {products.map((product, index) => (
-          <div key={index} className="product-item">
-            <item product={product} addToOrder={setOrder} />
-          </div>
-        ))}
-      </div>
-      <Order />
+    <div className="product">
+    <Grid item md={3} xs={12}>
+          <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          width: '56%',
+          marginLeft: '5%',
+          height: '100%',
+          marginTop: '35px',
+          backgroundColor: theme.palette.primary.backgroundColor
+        }}
+      >
+        <img src={image} alt={name} className="product-image" style={{ marginTop: '10px', marginBottom: '20px',marginLeft: '10px',}}/>
+        <h3 className="product-name" style={{ marginTop: '-20px'}}>{name}</h3>
+        <p className="product-price" style={{ marginTop: '-20px', marginLeft:'-130px'}}>${price}</p>
+      </Box>
+      </Grid>
     </div>
   );
 };
 
-export default App;
+export default Product;
