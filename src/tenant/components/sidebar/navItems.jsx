@@ -25,7 +25,7 @@ const NavigationItems = [
   },
   {
     name: 'Products',
-    link: '/products',
+    link: '/item',
     icon: <Person4OutlinedIcon style={{ color: '#565656' }} />,
   },
 ];
