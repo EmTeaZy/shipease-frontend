@@ -64,7 +64,7 @@ const App = () => {
                         <Route path="addDriver" element={<CreateDriver />} />
                         <Route path="addVehicle" element={<CreateVehicle />} />
                         <Route
-                          path="item"
+                          path="product"
                           element={<Product />}
                         />
                       </Route>

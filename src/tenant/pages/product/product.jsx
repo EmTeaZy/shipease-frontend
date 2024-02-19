@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Products from "./components/products";
+import Products from "./components/productinformation";
 import Order from "./components/order";
 
 const Apppage = () => {

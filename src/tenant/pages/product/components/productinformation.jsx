@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "./items";
+import Product from "./productcard";
 import theme from "../../../../theme";
 
 const products = [
