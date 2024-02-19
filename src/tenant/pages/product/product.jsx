@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import Products from "./components/products";
+import Order from "./components/order";
 
-const Product = ({ product, onAddToCart, productStyles, productImageStyles, productImageContainerStyles, producth3, productp }) => {
+const Apppage = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleAddToCart = (product) => {
+    setSelectedProduct(product);
+  };
+
   return (
-    <div className="product" style={productStyles}>
-      <div style={productImageContainerStyles}>
-        <img src={product.image} alt={product.name} style={productImageStyles} />
+    <div className="app">
+      <div className="side-panel">
+        <Order product={selectedProduct} />
       </div>
-      <h3 style={producth3}>{product.name}</h3>
-      <p style={productp} >${product.price}</p>
+      <div className="main-panel">
+        <Products onAddToCart={handleAddToCart} />
+      </div>
     </div>
   );
 };
 
-export default Product;
+export default Apppage;

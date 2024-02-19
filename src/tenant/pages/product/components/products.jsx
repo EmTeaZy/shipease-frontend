@@ -1,12 +1,12 @@
 import React from "react";
-import Product from "./product";
-import theme from "../../../theme";
+import Product from "./items";
+import theme from "../../../../theme";
 
 const products = [
   {
     id: 1,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -15,7 +15,7 @@ const products = [
   {
     id: 2,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -23,7 +23,7 @@ const products = [
   {
     id: 3,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -31,7 +31,7 @@ const products = [
   {
     id: 4,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -39,7 +39,7 @@ const products = [
   {
     id: 5,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -47,7 +47,7 @@ const products = [
   {
     id: 6,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
@@ -55,7 +55,23 @@ const products = [
   {
     id: 7,
     name: "Road Cone & Flare",
-    image: require("../product/image 32.png"),
+    image: require("./image 32.png"),
+    price: 6.5,
+    description:
+      "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
+  },
+  {
+    id: 8,
+    name: "Road Cone & Flare",
+    image: require("./image 32.png"),
+    price: 6.5,
+    description:
+      "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
+  },
+  {
+    id: 9,
+    name: "Road Cone & Flare",
+    image: require("./image 32.png"),
     price: 6.5,
     description:
       "Experience an exquisite blend of flavors in Fancy Fusion, where elegance meets innovation",
